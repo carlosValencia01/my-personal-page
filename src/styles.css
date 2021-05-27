@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+.navbar-background {
+  background-color: #00394d;
+}
+
+footer {
+  color: white;
+  background-color: #00394d;
+  opacity: 0.85;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
