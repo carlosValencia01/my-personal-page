@@ -10,6 +10,7 @@ import { TestTutorialComponent } from './components/tutorials/test-tutorial/test
 import { SearchComponent } from './components/search/search.component';
 import { AboutComponent } from './components/about/about.component';
 import { HomeComponent } from './components/home/home.component';
+import { AppsComponent } from './components/apps/apps.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HomeComponent } from './components/home/home.component';
     TestTutorialComponent,
     SearchComponent,
     AboutComponent,
-    HomeComponent
+    HomeComponent,
+    AppsComponent
   ],
   imports: [
     BrowserModule,
