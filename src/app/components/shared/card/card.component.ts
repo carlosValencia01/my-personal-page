@@ -15,7 +15,6 @@ export class CardComponent implements OnInit {
 
   goToPost(){
     this.router.navigate(['blogs-home','test']);
-    console.log('click');
   }
 
 }

@@ -1,3 +1,13 @@
+<div class="row row-cols-1 row-cols-md-3 g-4">
 
-<app-card></app-card>
+    <div class="col" class="puntero" *ngFor="let blog of blogs">
+        <div class="card puntero" style="width: 18rem;" (click)="goToPost(blog.url)">
+            <div class="card-body">
+                <h5 class="card-title">{{blog.title}}</h5>
+                <p class="card-text">{{blog.description}}</p>
+            </div>
+        </div>
+    </div>
+    
+</div>
 
