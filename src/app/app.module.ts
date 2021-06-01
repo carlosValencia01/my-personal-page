@@ -13,6 +13,7 @@ import { HomeComponent } from './components/home/home.component';
 import { CardComponent } from './components/shared/card/card.component';
 import { BlogsHomeComponent } from './components/blogs/blogs-home/blogs-home.component';
 import { RenderBlogComponent } from './components/blogs/render-blog/render-blog.component';
+import { WhatIsNodeComponent } from './components/blogs/what-is-node/what-is-node.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { RenderBlogComponent } from './components/blogs/render-blog/render-blog.
     HomeComponent,
     CardComponent,
     BlogsHomeComponent,
-    RenderBlogComponent
+    RenderBlogComponent,
+    WhatIsNodeComponent
   ],
   imports: [
     BrowserModule,
