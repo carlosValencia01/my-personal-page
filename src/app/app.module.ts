@@ -10,6 +10,9 @@ import { TestTutorialComponent } from './components/tutorials/test-tutorial/test
 import { SearchComponent } from './components/search/search.component';
 import { AboutComponent } from './components/about/about.component';
 import { HomeComponent } from './components/home/home.component';
+import { CardComponent } from './components/shared/card/card.component';
+import { BlogsHomeComponent } from './components/blogs/blogs-home/blogs-home.component';
+import { RenderBlogComponent } from './components/blogs/render-blog/render-blog.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { HomeComponent } from './components/home/home.component';
     TestTutorialComponent,
     SearchComponent,
     AboutComponent,
-    HomeComponent
+    HomeComponent,
+    CardComponent,
+    BlogsHomeComponent,
+    RenderBlogComponent
   ],
   imports: [
     BrowserModule,
