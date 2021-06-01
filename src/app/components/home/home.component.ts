@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { PostService } from 'src/app/services/post.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +9,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  posts:any[]=[];
+
+  constructor(private postService:PostService,
+              private router:Router) { }
 
   ngOnInit(): void {
+    this.posts=this.postService.getNewPosts();
+  }
+
+  goToPost(url:string,category:string){
+    let param="";
+    switch (category){
+      case 'blog': param="blogs-home"
+      break;
+    }
+    this.router.navigate([param,url]);
   }
 
 }
