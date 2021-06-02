@@ -1,6 +1,11 @@
-<div class="card puntero" style="width: 18rem;" (click)="goToPost()">
-    <div class="card-body">
-        <h5 class="card-title">Titulo</h5>
-        <p class="card-text">Descripcion del contenido.</p>
+<div class="col" class="puntero">
+    <div class="card puntero" style="width: 18rem;" (click)="goToPost(posts.url,posts.category)">
+        <div class="card-body">
+            <img [src]="posts.image" class="card-img-top" alt="Not working" width="300px;" height="150px">
+            <h5 class="card-title">{{posts.title}}</h5>
+            <div class="text-muted">
+                {{posts.date | date:'mediumDate' }}
+            </div>
+        </div>
     </div>
 </div>

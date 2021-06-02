@@ -22,15 +22,4 @@ export class HomeComponent implements OnInit {
     this.loading = false;
   }
 
-  goToPost(url:string,category:string){
-    let param="";
-    switch (category){
-      case 'blog': param="blogs-home"
-      break;
-      case 'tutorials': param="tutorials-home"
-      break;
-    }
-    this.router.navigate([param,url]);
-  }
-
 }

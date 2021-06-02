@@ -7,17 +7,7 @@
 
 <div class="row row-cols-1 row-cols-md-3 g-4" *ngIf="!loading">
 
-    <div class="col" class="puntero" *ngFor="let blog of posts">
-        <div class="card puntero" style="width: 18rem;" (click)="goToPost(blog.url,blog.category)">
-            <div class="card-body">
-                <img [src]="blog.image" class="card-img-top" alt="Not working" width="300px;" height="150px">
-                <h5 class="card-title">{{blog.title}}</h5>
-                <div class="text-muted">
-                    {{blog.date | date:'mediumDate' }}
-                </div>
-            </div>
-        </div>
-    </div>
+<app-card [posts]="blog" *ngFor="let blog of posts"></app-card>
 
 </div>
 

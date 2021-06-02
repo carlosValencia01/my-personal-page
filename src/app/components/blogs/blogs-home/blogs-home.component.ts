@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router'
 import { PostService } from '../../../services/post.service';
 
 @Component({
@@ -11,16 +10,11 @@ export class BlogsHomeComponent implements OnInit {
 
   blogs:any[]=[];
 
-  constructor(private postService:PostService,
-              private router:Router) { 
+  constructor(private postService:PostService) { 
   }
 
   ngOnInit(): void {
     this.blogs = this.postService.getBlogs();
-  }
-
-  goToPost(url:string){
-    this.router.navigate(['blogs-home',url]);
   }
 
 }
