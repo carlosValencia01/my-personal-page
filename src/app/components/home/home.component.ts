@@ -10,12 +10,16 @@ import { PostService } from 'src/app/services/post.service';
 export class HomeComponent implements OnInit {
 
   posts:any[]=[];
+  loading: boolean;
 
   constructor(private postService:PostService,
-              private router:Router) { }
+              private router:Router) { 
+                this.loading = true;
+              }
 
   ngOnInit(): void {
     this.posts=this.postService.getNewPosts();
+    this.loading = false;
   }
 
   goToPost(url:string,category:string){

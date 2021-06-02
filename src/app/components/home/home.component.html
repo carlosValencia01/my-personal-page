@@ -1,7 +1,11 @@
 <h1>Lo más nuevo</h1>
 <hr>
 
-<div class="row row-cols-1 row-cols-md-3 g-4">
+<div *ngIf="loading">
+    <h1>Cargando</h1>
+</div>
+
+<div class="row row-cols-1 row-cols-md-3 g-4" *ngIf="!loading">
 
     <div class="col" class="puntero" *ngFor="let blog of posts">
         <div class="card puntero" style="width: 18rem;" (click)="goToPost(blog.url,blog.category)">
