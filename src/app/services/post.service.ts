@@ -16,11 +16,11 @@ export class PostService {
     },
     //tests
     {
-      title:"test post 2",
+      title:"test post tutorial",
       description:"Descripcion de prueba del post 2",
-      category:"blog",
+      category:"tutorials",
       url:"test",
-      date:new Date(2021,0,1),
+      date:new Date(2021,4,30),
       image:"https://lh3.googleusercontent.com/OylpxvqcorR495QfYddsvHpglTqSjQoiQTECDmUNgJ6kw_agk3h2FuUWdDvcn04S2HH_H7q_SQdl6Mxn4dxsiC9p80vQc2RUik86PUB1mYPvdnL3Ia3UEfEKZKjfSJa2nPSSxOcifqniDCQLhBG1Z864_aRBTbK22Lf0CziFcXxgeOOQqFCAxHlcr5tlciA-GAUVxbX1vvKwUNC2zz9tCIkvAqZp6CkrLzAhuEFVUIMZrflXZ5SD0gDy2CKN3OlTwnF2Sx7e7ddTkN8tJlaoHlf7ZMrCw-dxq_WDIToPTjpkbwMvcTFIu5KddDPyNfAKqIMB6DPgziBIwvyvxdf9OK7GpBFg71CLZyLQhF15SOGWYt0ks98-K0BD1H7JaqtvlSvAtaRaYiOoDxLQjF0a9dsKw7W1a48kFvFLUIDn17A0Fu13QlHQzr2Fv22hxuSfJYv6iREcxYu_hszIl7GaLPRXUSwdTiz42u-z3sEKZ9hZGbfJEFzyR9Or-V1riCmVdRZQ0AH0NCTbVHWnYyn3Y9kStrrpiUlokbKaMvQx8LQOmOjuxN-Rlr-u3tYcUSViyjVE6RAVUk6UBZa2zD7BhOby4_VmPRJ3YnkeqdanXLghf-F8A5aVe4TLG9ymiiuWT-DVhTFkMc81k_dffeWRxUHNIVXCSArYG-yoQe4Z2n9na06JXvHNaxSA_iB5nPN-u_04jmTF1rucsnzkUhWeEKiI=w900-h520-no?authuser=0"
     },
     {
@@ -109,6 +109,16 @@ export class PostService {
         }
       }
     return blogsArr;
+  }
+
+  getTutorials(){
+    let tutorialsArr:post[] = [];
+      for (let post of this.posts){
+        if(post.category == "tutorials"){
+          tutorialsArr.push(post);
+        }
+      }
+    return tutorialsArr;
   }
 
   getNewPosts(){

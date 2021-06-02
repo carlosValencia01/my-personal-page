@@ -27,6 +27,8 @@ export class HomeComponent implements OnInit {
     switch (category){
       case 'blog': param="blogs-home"
       break;
+      case 'tutorials': param="tutorials-home"
+      break;
     }
     this.router.navigate([param,url]);
   }
