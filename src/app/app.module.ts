@@ -14,6 +14,8 @@ import { CardComponent } from './components/shared/card/card.component';
 import { BlogsHomeComponent } from './components/blogs/blogs-home/blogs-home.component';
 import { RenderBlogComponent } from './components/blogs/render-blog/render-blog.component';
 import { WhatIsNodeComponent } from './components/blogs/what-is-node/what-is-node.component';
+import { RenderTutorialComponent } from './components/tutorials/render-tutorial/render-tutorial.component';
+import { TutorialsHomeComponent } from './components/tutorials/tutorials-home/tutorials-home.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { WhatIsNodeComponent } from './components/blogs/what-is-node/what-is-nod
     CardComponent,
     BlogsHomeComponent,
     RenderBlogComponent,
-    WhatIsNodeComponent
+    WhatIsNodeComponent,
+    RenderTutorialComponent,
+    TutorialsHomeComponent
   ],
   imports: [
     BrowserModule,
