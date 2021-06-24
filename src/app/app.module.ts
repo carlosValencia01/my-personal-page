@@ -16,6 +16,7 @@ import { RenderBlogComponent } from './components/blogs/render-blog/render-blog.
 import { WhatIsNodeComponent } from './components/blogs/what-is-node/what-is-node.component';
 import { RenderTutorialComponent } from './components/tutorials/render-tutorial/render-tutorial.component';
 import { TutorialsHomeComponent } from './components/tutorials/tutorials-home/tutorials-home.component';
+import { HowToApiComponent } from './components/tutorials/how-to-api/how-to-api.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { TutorialsHomeComponent } from './components/tutorials/tutorials-home/tu
     RenderBlogComponent,
     WhatIsNodeComponent,
     RenderTutorialComponent,
-    TutorialsHomeComponent
+    TutorialsHomeComponent,
+    HowToApiComponent
   ],
   imports: [
     BrowserModule,
